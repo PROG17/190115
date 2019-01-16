@@ -1,0 +1,16 @@
+﻿@model EmptySite.Models.ViewModel.PageViewModel<EmptySite.Models.Pages.StandardPage>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2 @Html.EditAttributes(m => m.CurrentPage.Heading)>@Model.CurrentPage.Heading</h2>
+
+<div @Html.EditAttributes(m => m.CurrentPage.MainBody)>
+    @Html.DisplayFor(m => m.CurrentPage.MainBody)
+</div>
+
+@Html.PropertyFor(m => m.CurrentPage.MainContentArea)
+
+
+

@@ -1,0 +1,10 @@
+﻿@model EmptySite.Models.ViewModel.PageViewModel<EmptySite.Models.Pages.StartPage>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Hello World</h2>
+
+@Html.PropertyFor(m => m.CurrentPage.MainContentArea)
+

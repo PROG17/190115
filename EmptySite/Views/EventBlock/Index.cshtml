@@ -1,0 +1,7 @@
+﻿@model EmptySite.Models.Blocks.EventBlock
+
+<div style="border: solid 2px blue;">
+    <h2>@Html.PropertyFor(m => m.EventName)</h2>
+    <div>Where? @Html.PropertyFor(m => m.EventLocation)</div>
+    <div>When? @Html.PropertyFor(m => m.EventDateTime)</div>
+</div>

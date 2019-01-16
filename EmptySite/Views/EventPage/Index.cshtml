@@ -1,0 +1,17 @@
+﻿@model EmptySite.Models.ViewModel.PageViewModel<EmptySite.Models.Pages.EventPage>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>
+    @Html.PropertyFor(m => m.CurrentPage.EventInfo.EventName)
+</h2>
+
+
+ Where?   @Html.PropertyFor(m => m.CurrentPage.EventInfo.EventLocation)
+ When?   @Html.PropertyFor(m => m.CurrentPage.EventInfo.EventDateTime)
+
+<hr />
+
+@Html.PropertyFor(m => m.CurrentPage.EventInfo)

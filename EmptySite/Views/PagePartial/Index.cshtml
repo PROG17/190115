@@ -1,0 +1,8 @@
+﻿@model EPiServer.Core.PageData
+
+<div style="border: solid 2px red;">
+
+    <h2>@Html.ContentLink(Model)</h2>
+    <a href="@Url.ContentUrl(Model.ContentLink)">Läs mer...</a>
+
+</div>
